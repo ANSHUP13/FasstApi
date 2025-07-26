@@ -1,0 +1,77 @@
+{
+    "01" : {
+        "name" : "ram",
+        "age" : 20,
+        "weight" : 70
+    },
+    "02" : {
+        "name" : "shyam",
+        "age" : 25,
+        "weight" : 75
+    },
+    "03" : {
+        "name" : "krishna",
+        "age" : 30,
+        "weight" : 80
+    },
+    "04" : {
+        "name" : "radha",
+        "age" : 22,
+        "weight" : 65
+    },
+    "05" : {
+        "name" : "laxman",
+        "age" : 18,
+        "weight" : 68
+    },
+    "06" : {
+        "name" : "sita",
+        "age" : 28,
+        "weight" : 72
+    },
+    "07" : {
+        "name" : "gita",
+        "age" : 26,
+        "weight" : 74
+    },
+    "08" : {
+        "name" : "hari",
+        "age" : 32,
+        "weight" : 78
+    },
+    "09" : {
+        "name" : "mohan",
+        "age" : 24,
+        "weight" : 66
+    },
+    "10" : {
+        "name" : "ramesh",
+        "age" : 21,
+        "weight" : 69
+    },
+    "11" : {
+        "name" : "suresh",
+        "age" : 29,
+        "weight" : 77
+    },
+    "12" : {
+        "name" : "rajesh",
+        "age" : 27,
+        "weight" : 73
+    },
+    "13" : {
+        "name" : "anita",
+        "age" : 19,
+        "weight" : 64
+    },
+    "14" : {
+        "name" : "neeta",
+        "age" : 23,
+        "weight" : 67
+    },
+    "15" : {
+        "name" : "geeta",
+        "age" : 31,
+        "weight" : 79
+    }
+}
