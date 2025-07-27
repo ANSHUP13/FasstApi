@@ -23,3 +23,8 @@ OPEN THE BROWSER
 
 TO CREATE REQUIREMENT.TXT FILE 
     #--> pip freeze > requirements.txt
+
+To create docker image
+    # docker build -t ansh2043/fastapi_tutorial .
+    # docker push ansh2043/fastapi_tutorial
+    # docker run -p 8000:8000 ansh2043/fastapi_tutorial

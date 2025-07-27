@@ -19,6 +19,10 @@ def load_data() -> dict:
 async def root():
     return {"message": "welcome to the FastAPI application!"}
 
+@app.get("/health")
+async def health():
+    return {"status": "healthy", "version": "1.0.0", "api": "FastAPI_tutorial"}
+
 
 @app.get("/views", response_model=Dict[str, model.Person])
 async def views():
