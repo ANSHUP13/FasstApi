@@ -4,7 +4,7 @@ from pprint import pprint
 
 
 class Person(BaseModel):
-    id: str = Field(..., description="Unique identifier for the person", example=["p001"])
+    id: Annotated[str, Field(..., description="Unique identifier for the person", example="p001")]
     name: Annotated[str, Field(min_length=1, max_length=50)]
     age: Annotated[int, Field(ge=0, le=120)]  # age must be between 0 and 120
     weight: Annotated[float, Field(gt=0, description= 'weight should be in Kgs')]  # weight must be greater than 0
@@ -50,71 +50,10 @@ class Person(BaseModel):
     def bmi(self) -> float:
         return self.weight / ((self.height) ** 2) if self.height else 0.0
     
-class Group(BaseModel):
-    group_id: str = Field(..., description="Unique identifier for the group", example=["g001"])
-    group_name: str
-    group_head: Person
-    members: List[Person] = Field(default_factory=list)  # default to an empty list
 
-    @model_validator(mode='after')
-    @classmethod
-    def validate_members(cls, model):
-        if len(model.members) < 2:
-            raise ValueError('A group must have at least two members')
-        if model.group_head not in model.members:
-            raise ValueError('Group head must be one of the members')
-        return model
-    
-'''
-
-p1 = Person(
-    id="p001",
-    name="John Doe",
-    age=30,
-    weight=70.5,
-    height=175.0,
-    email="abc@gmail.com",
-    contact="1234567890",
-    address="123 Main St",
-    hobbies=["Reading", "Traveling"]
-)
-p2 = Person(
-    id="p002",
-    name="Jane Smith",
-    age=25,
-    weight=60.0,
-    height=165.0,
-    email="bcd@gmail.com",
-    contact="1234556789",
-    address="456 Elm St",
-    hobbies=["Cooking", "Hiking"]
-)
-p3 = Person(
-    id="p003",
-    name="Alice Johnson",
-    age=65,
-    weight=80.0,
-    height=170.0,
-    email="efg@gmail.com",
-    contact="1122334455",
-    address="789 Oak St",
-    hobbies=["Gardening", "Painting"]
-)
-g1 = Group(
-    group_id="g001",
-    group_name="Friends",
-    group_head=p2,  # p1 is the group head
-    members=[p1, p2]  # Group with two members
-)
-g2 = Group(
-    group_id="g002",
-    group_name="Family",
-    group_head=p3,  # p3 is the group head
-    members=[p1, p2, p3]
-)
-
-temp = g1.model_dump()
-pprint(temp)  # Output: {'group_name': 'Friends'}
-
-
-'''
+class Update_Person(BaseModel):
+    name: Optional[str] = None
+    age: Optional[int] = None
+    weight: Optional[float] = None
+    height: Optional[float] = None
+    gender: Optional[Literal['male', 'female', 'other']] = None

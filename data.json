@@ -1,0 +1,74 @@
+{
+    "p002": {
+        "id": "p002",
+        "name": "Anshuman Pandey",
+        "age": 25,
+        "weight": 78.0,
+        "height": 1.5,
+        "gender": "male",
+        "email": "user@gmail.com",
+        "contact": "6393125739",
+        "address": "chakia chanduali",
+        "hobbies": [
+            "badminton",
+            "python"
+        ],
+        "is_adult": true,
+        "is_senior": false,
+        "bmi": 34.666666666666664
+    },
+    "p001": {
+        "id": "p001",
+        "name": "Aniket Pandey",
+        "age": 20,
+        "weight": 58.0,
+        "height": 1.4,
+        "gender": "male",
+        "email": "user@gmail.com",
+        "contact": "1234543234",
+        "address": "chakia, chanduali",
+        "hobbies": [
+            "playing",
+            "gambling"
+        ],
+        "is_adult": true,
+        "is_senior": false,
+        "bmi": 29.59183673469388
+    },
+    "p003": {
+        "id": "p003",
+        "name": "Ram Sagun Pandey",
+        "age": 55,
+        "weight": 85.0,
+        "height": 1.4,
+        "gender": "male",
+        "email": "user@gmail.com",
+        "contact": "1234543234",
+        "address": "chakia, chanduali",
+        "hobbies": [
+            "playing",
+            "gambling"
+        ],
+        "is_adult": true,
+        "is_senior": false,
+        "bmi": 43.36734693877552
+    },
+    "p004": {
+        "id": "p004",
+        "name": "Kusum Pandey",
+        "age": 45,
+        "weight": 55.0,
+        "height": 1.2,
+        "gender": "female",
+        "email": "user@gmail.com",
+        "contact": "3432343232",
+        "address": "chakia chanduali",
+        "hobbies": [
+            "cooking",
+            "studing"
+        ],
+        "is_adult": true,
+        "is_senior": false,
+        "bmi": 38.19444444444444
+    }
+}
