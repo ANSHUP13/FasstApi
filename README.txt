@@ -28,3 +28,24 @@ To create docker image
     # docker build -t ansh2043/fastapi_tutorial .
     # docker push ansh2043/fastapi_tutorial
     # docker run -p 8000:8000 ansh2043/fastapi_tutorial
+
+
+AWS Deployment
+    1. create an EC2 instance
+    2. Connect to the EC2 instance
+    3. Run the following commands
+        a. sudo apt-get update
+        b. sudo apt-get install -y docker.io
+        c. sudo systemctl start docker
+        d. sudo systemctl enable docker
+        e. sudo usermod -aG docker $USER
+        f. exit
+ 
+    4. Restart a new connection to EC2 instance
+    5. Run the following commands
+        a. docker push ansh2043/fastapi_tutorial:latest
+        b. docker run -p 8000:8000 ansh2043/fastapi_tutorial
+
+    6. change security group settings
+    7. Check the API 
+    
